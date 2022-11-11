@@ -1,22 +1,43 @@
-import React, { useState } from 'react';
-import Nav from './components/Nav';
-import About from './components/About';
-import Appointments from './components/Appointments';
-import Stylists from './components/Stylist';
-import ContactInfo from './components/Contact Info';
+
+import React, { useState } from "react";
+import LoginForm from "./components/LoginForm";
+import NavBar from "./components/NavBar";
+import About from "./components/About";
+import Stylists from "./components/Stylist";
+import Appointments from "./components/Appointments";
+import ContactInfo from "./components/ContactInfo";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css";
+// import { Button, Flex, Alert, Breadcrumb, Card, Form } from 'react-bootstrap';
+
 
 function App() {
+  const [isShowLogin, setIsShowLogin] = useState(true);
+
+  const handleLoginClick = () => {
+    setIsShowLogin((isShowLogin) => !isShowLogin);
+  };
 
   return (
-    <div>
-      <Nav />
+    <div className="App">
+      <NavBar handleLoginClick={handleLoginClick} />
+      <LoginForm isShowLogin={isShowLogin} />
       <main>
-       <About />
-       <Stylists />
-      <Appointments />
-      <ContactInfo />
+      {/* {!LoginForm ? (
+          <> */}
+            <About></About>
+            <Stylists></Stylists>
+            <Appointments></Appointments>
+            <ContactInfo></ContactInfo>
+          {/* </>
+        ) : (
+          <LoginForm></LoginForm>
+        )} */}
+        
       </main>
     </div>
+    
   );
 }
 
