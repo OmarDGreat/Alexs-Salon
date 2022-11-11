@@ -16,7 +16,7 @@ function Appointment() {
             </Col>
             <Col md={8}>
             <div>
-              <h1 id="Appointment">Schedule with me</h1>
+              <h1 id="appointment">Schedule with me</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
                 condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna

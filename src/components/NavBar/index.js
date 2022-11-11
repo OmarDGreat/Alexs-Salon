@@ -6,15 +6,15 @@ function NavBar({ handleLoginClick }) {
   };
   
   return (
-<div className="navbar">
 
-<div className="navbar-brand">
+    <div className="navbar">
+
+      <div className="navbar-brand">
         <h2>
           <a href="/" className="navbar-title">Alex's Salon</a>
         </h2>
       </div>
 
-      <div className="navbar-menu">
         <ul className="navbar-list">
           <li className="navbar-item">
             <a href="#about" className="navbar-link">
@@ -23,13 +23,13 @@ function NavBar({ handleLoginClick }) {
           </li>
 
           <li className="navbar-item">
-            <a href="#stylists" className="navbar-link">
+            <a href="#stylist" className="navbar-link">
               Stylists
             </a>
           </li>
 
           <li className="navbar-item">
-            <a href="#appointments" className="navbar-link">
+            <a href="#appointment" className="navbar-link">
               Appointments
             </a>
           </li>
@@ -41,7 +41,6 @@ function NavBar({ handleLoginClick }) {
           </li>
           
         </ul>
-      </div>
       
       <div>
         <span onClick={handleClick} className="loginicon">

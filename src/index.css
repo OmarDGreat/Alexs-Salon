@@ -11,6 +11,7 @@
   height: 60px;
   left: 0px;
   top: 0px;
+  justify-content: start !important;
 }
 
 .navbar .navbar-brand {
@@ -27,13 +28,7 @@
   line-height: 60px;
   color: #FFFFFF;
   text-decoration: none;
-}
-
-.navbar-menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100%;
+  margin-right: 150px !important;
 }
 
 .navbar-list {
@@ -44,7 +39,7 @@
  }
 
 .navbar-item {
-  margin: 0 10px;
+  margin: 0 100px;
 }
 
 .navbar-link {
@@ -176,5 +171,11 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 70vh;
+}
+
+.contact-info iframe {
+                   
+  height: 400px;
+  flex: 1 100%;
 }
 

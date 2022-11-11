@@ -4,23 +4,18 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function Stylist() {
+function ContactInfo() {
   return (
     <section className='bg-dark'>
       <Container>
           <Row>
           <Col md={4}>
-            <div>
-              <h1 id="stylist" className='text-light'>Location</h1>
-              <p className='text-light'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-                condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-                mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-                Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-                justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-                dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-                Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
-              </p>
+            <div className='contact-info'>
+              <h1 id="contact" className='text-light'>Location</h1>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.1824833268383!2d-105.10506668429922!3d40.16049057910696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bf99f57d29787%3A0x5a047ad58b8ae595!2s55%20Main%20St%2C%20Longmont%2C%20CO%2080501!5e0!3m2!1sen!2sus!4v1654865862543!5m2!1sen!2sus"
+                frameborder="0" allowfullscreen="true">
+              </iframe>
             </div>
             </Col>
             
@@ -67,4 +62,4 @@ function Stylist() {
   );
 }
 
-export default Stylist;
+export default ContactInfo;
