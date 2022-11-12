@@ -1,37 +1,35 @@
-import React from 'react';
+import React from "react";
 import coverImage from "../../assets/homepage/stylists/1.jpg";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function Stylist() {
   return (
-    <section className='bg-dark'>
+    <section className="bg-dark">
       <Container>
-          <Row>
+        <Row>
           <Col md={8}>
             <div>
-              <h1 id="stylist" className='text-light'>Alex</h1>
-              <p className='text-light'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-                condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-                mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-                Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-                justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-                dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-                Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+              <h1 id="stylist" className="text-light">
+                Alex
+              </h1>
+              <p className="text-light">
+                Alex is a certificied Cosmotologist/Beautician who enjoys
+                working with clients to help them achieve desired nail designs.
+                Alex interacts with clients, perform quality beautification
+                techniques, and providing spa-like services to her clients.
               </p>
             </div>
-            </Col>
-            
-            <Col md={4}>
-            <div>
-            <img src={coverImage} style={{ width: "100%" }} />
-            </div>
-            </Col>
-          </Row>
-      </Container>
+          </Col>
 
+          <Col md={4}>
+            <div>
+              <img src={coverImage} style={{ width: "100%" }} />
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }
