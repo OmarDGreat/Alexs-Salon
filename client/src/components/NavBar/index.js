@@ -17,9 +17,7 @@ function NavBar({ handleLoginClick }) {
 
         <ul className="navbar-list">
           <li className="navbar-item">
-            <a href="#about" className="navbar-link">
-              About
-            </a>
+            gi
           </li>
 
           <li className="navbar-item">
