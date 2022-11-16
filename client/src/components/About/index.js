@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 
 function About() {
   return (
-    <section className="min-vh-100">
+    <section className="min-vh-100" id="about">
       <div>
         <Container>
           <Row>

@@ -21,7 +21,7 @@ function ContactInfo() {
             
             <Col md={4}>
             <div>
-              <h2 className='text-light'> Buissness Hours</h2>
+              <h2 className='text-light'> Business Hours</h2>
               <br></br>
               <br></br>
               <p className='text-light'> 

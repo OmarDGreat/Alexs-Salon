@@ -23,19 +23,19 @@ function NavBar() {
                 </li>
 
                 <li className="navbar-item">
-                    <Link to="/#stylist" className="navbar-link">
+                    <Link to={{pathname:'/',hash:'stylist'}} className="navbar-link">
                         Stylists
                     </Link>
                 </li>
 
                 <li className="navbar-item">
-                    <Link to="/#appointment" className="navbar-link">
+                    <Link to="#appointment" className="navbar-link">
                         Appointments
                     </Link>
                 </li>
 
                 <li className="navbar-item">
-                    <Link to="#contact" className="navbar-link">
+                    <Link to="/#contact" className="navbar-link">
                         Contact
                     </Link>
                 </li>

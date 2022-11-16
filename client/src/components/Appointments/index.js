@@ -31,7 +31,7 @@ function Appointment() {
     };
 
     return (
-        <section className="min-vh-100">
+        <section className="min-vh-100" id="appointment">
             <Container>
                 <Row>
                     <Col md={4}>
@@ -42,7 +42,7 @@ function Appointment() {
                     {authCtx.auth.isLoggedIn && (
                         <Col md={8}>
                             <div>
-                                <h1 id="appointment">
+                                <h1>
                                     Schedule your session with:
                                 </h1>
                                 <select
