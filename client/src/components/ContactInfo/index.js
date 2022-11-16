@@ -2,6 +2,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 function ContactInfo() {
   return (
@@ -47,12 +49,8 @@ function ContactInfo() {
               <h2 className='text-light'> Contact us</h2>
               <br></br>
               <br></br>
-              <p className='text-light'> 
-                facebook.com/Alex's-Salon
-              </p>
-              <p className='text-light'> 
-                Insta.com/Alex's-Salon
-              </p>
+              <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/profile.php?id=100087684464661" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faFacebook} /></a>
+              <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faInstagram} /></a>
             </div>
             </Col>
           </Row>
