@@ -5,7 +5,7 @@ const app = express();
 const cookieParser = require("cookie-parser");
 const path = require("path");
 require("./db/mongoose");
-const User = require("./models/user");
+const User = require("./models/User");
 const userRouter = require("./controllers/user");
 const PORT = process.env.PORT || 3001;
 
